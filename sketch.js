@@ -9,13 +9,13 @@ let showbeetle = false;
 
 function preload() {
 	apercu = loadFont('fonts/apercu_bold_pro.otf');
-	gif_loadImg = loadImage('assets/beetleJuice.gif');
-	gif_loadImg = loadImage('assets/ken.gif');
-	cvd = loadImage('assets/cvd.png');
-	carole = loadImage('assets/carole.jpeg');
-	jail = loadImage('assets/jail.jpg');
-	germ = loadImage('assets/germ.jpeg');
-	dr = loadImage('assets/dr.jpg');
+	gif_loadImg = loadImage('beetleJuice.gif');
+	gif_loadImg = loadImage('ken.gif');
+	cvd = loadImage('cvd.png');
+	carole = loadImage('carole.jpeg');
+	jail = loadImage('jail.jpg');
+	germ = loadImage('germ.jpeg');
+	dr = loadImage('dr.jpg');
 }
 function mousePressed() {
 	if (screen == 1) {
@@ -54,13 +54,13 @@ function setup() {
 	createCanvas(950, 500);
 	// Load Bg for screen 2
 	if (screen == 2) {
-		bg = loadImage('assets/cvd.png');
+		bg = loadImage('cvd.png');
 	}
 }
 //Draw Screens
 function draw() {
 	if (showken == true) {
-		createImg('assets/ken.gif', 'ken').position(20, 120);
+		createImg('ken.gif', 'ken').position(20, 120);
 	}
 	if (screen == 1) {
 		screen1();
@@ -231,7 +231,7 @@ function screen9() {
 	background(0);
 	showbeetle = true;
 	if (showbeetle == true) {
-		createImg('assets/beetleJuice.gif').position(50, 150);
+		createImg('beetleJuice.gif').position(50, 150);
 	}
 	fill(500);
 	textSize(48);
