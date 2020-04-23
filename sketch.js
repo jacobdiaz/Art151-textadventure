@@ -207,7 +207,7 @@ function screen3() {
 	background(0);
 	image(germ, 0, 0);
 
-	printCenterText('Wow your a good look bacteria...');
+	printCenterText('Wow your a good looking bacteria...');
 	// Insert picture of backter good looking
 }
 function screen5() {
